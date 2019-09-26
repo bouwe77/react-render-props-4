@@ -35,7 +35,7 @@ function Toggle({ render, onToggle }) {
   const [on, setOn] = useState(false);
 
   function doToggle() {
-    setOn(on => !on);
+    setOn(!on);
     onToggle(!on);
   }
 
